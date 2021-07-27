@@ -15,3 +15,15 @@
 </ul>
 
 <button *ngIf="items.length > 0" (click)="deleteAll()">Delete All Items</button>
+
+<div *ngFor="let card of cards" [ngSwitch]="card.supertypes">
+  <h4>
+    {{ card.name }}
+  </h4>
+  <img [src]="card.imageUrl" alt="{{ card.name }}" />
+  <p *ngSwitchCase="card.supertypes">{{ card.supertypes }}</p>
+  <p>Rarity: {{ card.rarity }}</p>
+  <p>{{ card.price }}</p>
+</div>
+
+<app-card></app-card>
