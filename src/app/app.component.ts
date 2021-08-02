@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'ToDo list';
   item = '';
   items: string[] = [];
+  searchText = '';
 
   cards: Card[] = [
     {
@@ -1205,4 +1206,20 @@ export class AppComponent {
   deleteAll(): void {
     this.items = [];
   }
+
+  clickCard(id: string) {
+    console.log('Card: ');
+    console.log(id);
+  }
+
+  // performFilter(filterBy: string): Card[] {
+  //   if (filterBy) {
+  //     filterBy = filterBy.toLocaleLowerCase();
+  //     return this.cards.filter(
+  //       (card: Card) => card.name.toLocaleLowerCase().indexOf(filterBy) !== -1
+  //     );
+  //   } else {
+  //     return this.cards;
+  //   }
+  // }
 }

@@ -1,0 +1,25 @@
+:host {
+  width: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -moz-box-shadow: 3px 4px 9px 2px #c1c1c1;
+  -webkit-box-shadow: 3px 4px 9px 2px #c1c1c1;
+  box-shadow: 3px 4px 9px 1px #373f41, 3px 4px 9px 2px #cab498;
+  background-color: #fff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+h4,
+p:not(div > p) {
+  margin: 0.5rem 0 0;
+}
+div > p {
+  margin: 0;
+}
+img {
+  border-radius: 0.7rem;
+}

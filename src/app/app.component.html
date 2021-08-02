@@ -1,4 +1,5 @@
-<h1>This is a {{ title }}</h1>
+<!-- 
+  <h1>This is a {{ title }}</h1>
 
 <input type="text" name="item" [(ngModel)]="item" />
 
@@ -12,18 +13,31 @@
 
     <button (click)="deleteItem(i)">X</button>
   </li>
-</ul>
-
+</ul> 
 <button *ngIf="items.length > 0" (click)="deleteAll()">Delete All Items</button>
+-->
 
-<div *ngFor="let card of cards" [ngSwitch]="card.supertypes">
-  <h4>
-    {{ card.name }}
-  </h4>
-  <img [src]="card.imageUrl" alt="{{ card.name }}" />
-  <p *ngSwitchCase="card.supertypes">{{ card.supertypes }}</p>
-  <p>Rarity: {{ card.rarity }}</p>
-  <p>{{ card.price }}</p>
-</div>
+<router-outlet></router-outlet>
 
-<app-card></app-card>
+<header>
+  <h2>CardShop</h2>
+</header>
+<main>
+  <input
+    type="text"
+    id="search-text"
+    aria-describedby="search-text"
+    [(ngModel)]="searchText"
+    placeholder="Search by card name"
+    autofocus
+  />
+
+  <section class="cardList">
+    <app-card
+      class="card"
+      *ngFor="let card of cards | filter: searchText"
+      (cardClicked)="clickCard($event)"
+      [card]="card"
+    ></app-card>
+  </section>
+</main>
