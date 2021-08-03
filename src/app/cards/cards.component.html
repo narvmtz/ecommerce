@@ -1,1 +1,17 @@
-<p>cards works!</p>
+<app-header></app-header>
+<input
+  type="text"
+  id="search-text"
+  aria-describedby="search-text"
+  [(ngModel)]="searchText"
+  placeholder="Search by card name"
+  autofocus
+/>
+<section class="cardList">
+  <app-card
+    class="card"
+    *ngFor="let card of cards | filter: searchText"
+    (cardClicked)="clickCard($event)"
+    [card]="card"
+  ></app-card>
+</section>
