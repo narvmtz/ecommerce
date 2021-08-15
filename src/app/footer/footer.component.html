@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<footer class="footer-basic">
+  <section class="social">
+    <a href="#"><fa-icon [icon]="faGithub"></fa-icon></a>
+    <a href="#"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+    <a href="#"><fa-icon [icon]="faLink"></fa-icon></a>
+  </section>
+  <ul class="list-inline">
+    <li>
+      <a routerLink="/cards" routerLinkActive="active">Cards</a>
+    </li>
+    <li>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+  </ul>
+  <p class="copyright">CardShop © 2021</p>
+</footer>
