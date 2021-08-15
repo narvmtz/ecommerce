@@ -9,6 +9,7 @@ import { Card } from '../card.model';
 })
 export class CardsComponent implements OnInit {
   searchText = '';
+
   cards: Card[] = [
     {
       name: "Ancestor's Chosen",
@@ -1199,14 +1200,4 @@ export class CardsComponent implements OnInit {
     console.log('Card: ');
     console.log(id);
   }
-  // performFilter(filterBy: string): Card[] {
-  //   if (filterBy) {
-  //     filterBy = filterBy.toLocaleLowerCase();
-  //     return this.cards.filter(
-  //       (card: Card) => card.name.toLocaleLowerCase().indexOf(filterBy) !== -1
-  //     );
-  //   } else {
-  //     return this.cards;
-  //   }
-  // }
 }

@@ -1,20 +1,26 @@
+$light: #fff;
+$gold: #dcc5a6;
+$gray: #c1c1c1;
+$dark-light: #4d4f50;
+$dark: #000;
+
 :host {
-  width: 15rem;
+  width: 16rem;
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  -moz-box-shadow: 3px 4px 9px 2px #c1c1c1;
-  -webkit-box-shadow: 3px 4px 9px 2px #c1c1c1;
-  box-shadow: 3px 4px 9px 1px #373f41, 3px 4px 9px 2px #cab498;
-  background-color: #fff;
+  -moz-box-shadow: 3px 4px 9px 2px $gray;
+  -webkit-box-shadow: 3px 4px 9px 2px $gray;
+  box-shadow: 3px 4px 9px 1px $dark-light, 3px 4px 9px 2px $gold;
+  background-color: $light;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
+  padding: 0 1rem 0.5rem;
 }
-h4,
-p:not(div > p) {
+h4 {
   margin: 0.5rem 0 0;
 }
 div > p {
@@ -22,4 +28,16 @@ div > p {
 }
 img {
   border-radius: 0.7rem;
+  margin: 1rem 0;
+}
+.cardImage {
+  width: 100%;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0 auto;
 }

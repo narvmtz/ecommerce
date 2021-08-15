@@ -1,10 +1,12 @@
-<img [src]="card.imageUrl" alt="{{ card.name }}" />
-<h4>
-  {{ card.name | uppercase }}
-</h4>
-<p>{{ card.supertypes }}</p>
-<div class="info">
-  <p>{{ card.rarity }}</p>
-  <p>{{ card.price | currency }}</p>
+<p class="text">{{ card.rarity | uppercase }}</p>
+<div class="cardImage">
+  <img [src]="card.imageUrl" alt="{{ card.name }}" />
 </div>
-<button (click)="addCart()">Add to cart</button>
+<h4 class="text">
+  {{ card.name | titlecase }}
+</h4>
+<!-- <p class="text">{{ card.supertypes }}</p> -->
+<div class="info">
+  <p>{{ card.price | currency }}</p>
+  <button (click)="addCart()">Add to cart</button>
+</div>
