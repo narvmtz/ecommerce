@@ -1,13 +1,13 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { Card } from '../card.model';
+import { Card } from './card.model';
 
 @Component({
   selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
+  templateUrl: './card-details.component.html',
+  styleUrls: ['./card-details.component.scss'],
 })
-export class CardComponent {
+export class CardDetailsComponent {
   @Input()
   card!: Card;
 

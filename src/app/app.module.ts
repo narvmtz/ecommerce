@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SwiperModule } from 'swiper/angular';
 
-import { CardComponent } from './components/card.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
@@ -19,7 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
+    CardDetailsComponent,
     FilterPipe,
     HomeComponent,
     CardsComponent,
@@ -28,7 +28,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     BannerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, SwiperModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    SwiperModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
