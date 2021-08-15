@@ -1,1 +1,19 @@
-<p>banner works!</p>
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="0"
+  (swiper)="onSwiper($event)"
+  (slideChange)="onSlideChange()"
+  [pagination]="{ clickable: true }"
+  [autoplay]="{
+    delay: 10000,
+    disableOnInteraction: false
+  }"
+>
+  <ng-template
+    swiperSlide
+    *ngFor="let img of images"
+    data-swiper-autoplay="2000"
+  >
+    <img [src]="img.imgUrl" alt="banner" class="bannerImage" />
+  </ng-template>
+</swiper>

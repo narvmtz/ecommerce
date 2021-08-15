@@ -1,0 +1,24 @@
+.bannerImage {
+  width: 100%;
+  max-height: 22rem;
+}
+@media screen and (min-width: 37em) {
+  .bannerImage {
+    max-height: 25rem;
+  }
+}
+@media screen and (min-width: 48em) {
+  .bannerImage {
+    max-height: 450px;
+  }
+}
+@media screen and (min-width: 60em) {
+  .bannerImage {
+    max-height: 550px;
+  }
+}
+@media screen and (min-width: 72em) {
+  .bannerImage {
+    max-height: 650px;
+  }
+}
