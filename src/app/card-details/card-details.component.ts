@@ -1,5 +1,6 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { Card } from './card.model';
 
 @Component({
@@ -7,7 +8,7 @@ import { Card } from './card.model';
   templateUrl: './card-details.component.html',
   styleUrls: ['./card-details.component.scss'],
 })
-export class CardDetailsComponent {
+export class CardDetailsComponent implements OnInit {
   @Input()
   card!: Card;
 
@@ -25,8 +26,14 @@ export class CardDetailsComponent {
 
   @Output() cardClicked: EventEmitter<any> = new EventEmitter();
 
+  constructor() {}
+
+  ngOnInit(): void {}
+
   addCart() {
     console.log('added to cart');
     this.cardClicked.emit(this.card.id);
   }
+
+  faCart = faCartPlus;
 }

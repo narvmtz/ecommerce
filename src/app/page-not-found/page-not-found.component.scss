@@ -54,7 +54,7 @@ main {
   background-color: $seed;
   color: $light;
   h1 {
-    font-family: "Fontdiner Swanky", cursive;
+    font-family: cursive;
     font-size: $lg;
     color: $lime;
     margin-bottom: $sm;
@@ -67,7 +67,7 @@ main {
     }
   }
   button {
-    font-family: "Fontdiner Swanky", cursive;
+    font-family: cursive;
     font-size: $sm;
     color: $seed;
     border: none;

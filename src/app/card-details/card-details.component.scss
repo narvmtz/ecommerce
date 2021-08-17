@@ -1,8 +1,10 @@
 $light: #fff;
 $gold: #dcc5a6;
+$golden: #325f57;
 $gray: #c1c1c1;
 $dark-light: #4d4f50;
 $dark: #000;
+$hover-button: #d8b07b;
 
 :host {
   width: 16rem;
@@ -18,7 +20,8 @@ $dark: #000;
 .info {
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem 0.5rem;
+  align-items: center;
+  padding: 0 1.5rem 0.5rem;
 }
 h4 {
   margin: 0.5rem 0 0;
@@ -36,8 +39,23 @@ img {
   display: flex;
   justify-content: center;
 }
-.text {
+.rarityCard,
+.titleCard {
   text-align: center;
   padding: 0.5rem 0;
   margin: 0 auto;
+}
+.cartButton {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  color: $light;
+  background-color: $golden;
+  box-shadow: 1px 2px 1px $gray, 1px 2px 2px $gold;
+  border: none;
+
+  &:hover {
+    color: $dark;
+    background-color: $hover-button;
+    cursor: pointer;
+  }
 }
