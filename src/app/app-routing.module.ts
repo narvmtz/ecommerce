@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { TodoComponent } from './todo/todo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CardDetailedComponent } from './card-detailed/card-detailed.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'todo',
     component: TodoComponent,
+  },
+  {
+    path: 'cards/:id',
+    component: CardDetailedComponent,
   },
   {
     path: '**',
