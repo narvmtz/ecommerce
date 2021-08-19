@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardDetailedComponent } from './card-detailed/card-detailed.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CardDetailedComponent } from './card-detailed/card-detailed.component';
     FooterComponent,
     BannerComponent,
     CardDetailedComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,5 +41,6 @@ import { CardDetailedComponent } from './card-detailed/card-detailed.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
