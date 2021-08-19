@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LayoutComponent } from './layout/layout.component';
-import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { TodoComponent } from './todo/todo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -15,7 +14,10 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: HomeComponent,
+        loadChildren: () =>
+          import('./components/home/home/home.module').then(
+            (m) => m.HomeModule
+          ),
       },
       {
         path: '',

@@ -8,12 +8,12 @@ import { SwiperModule } from 'swiper/angular';
 
 import { CardDetailsComponent } from './card-details/card-details.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { TodoComponent } from './todo/todo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { BannerComponent } from './banner/banner.component';
+// import { BannerComponent } from './banner/banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardDetailedComponent } from './card-detailed/card-detailed.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -23,12 +23,12 @@ import { LayoutComponent } from './layout/layout.component';
     AppComponent,
     CardDetailsComponent,
     FilterPipe,
-    HomeComponent,
+    // HomeComponent,
     CardsComponent,
     TodoComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent,
+    // BannerComponent,
     CardDetailedComponent,
     LayoutComponent,
   ],
