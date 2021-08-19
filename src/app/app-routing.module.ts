@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LayoutComponent } from './layout/layout.component';
+import { LayoutComponent } from './components/layout/layout/layout.component';
 import { CardsComponent } from './cards/cards.component';
 import { TodoComponent } from './todo/todo.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CardDetailedComponent } from './card-detailed/card-detailed.component';
 
 const routes: Routes = [
